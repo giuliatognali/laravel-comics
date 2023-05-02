@@ -1,0 +1,56 @@
+header{    
+    .container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $primary-color;
+
+    .top-header{
+        
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        
+    }
+}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-logo{
+        height: 5rem;
+    }
+    nav{
+        ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: .9375rem;
+            height: 100%;
+
+            a {
+                font-weight: 600;
+                font-stretch: condensed;
+                color: $secondary-color;
+            }
+
+            &:hover {
+                border-bottom: 4px solid $primary-color;
+
+                a {
+                    color: $primary-color;
+                }
+
+            }
+        }
+    }
+
+    }
+}
