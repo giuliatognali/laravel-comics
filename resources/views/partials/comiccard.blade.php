@@ -3,7 +3,8 @@
     @foreach ($comics as $comic)
         <div class="my-card">
             <div class="img">
-                <img src="{{ $comic['thumb'] }}">
+                <a href="#"><img src="{{ $comic['thumb'] }}"></a>
+                
             </div>
 
             <h6>{{ $comic['title'] }}</h6>

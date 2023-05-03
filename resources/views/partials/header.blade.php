@@ -1,7 +1,7 @@
 <header>
     <div class="container-top">
         <div class="container">
-            <div class='top-header'>
+            <div class="top-header">
                 <h5> DC POWER VISA</h4>
                     <div class="dropdown">
                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -16,12 +16,12 @@
             </div>
         </div>
     </div>
-    <div class='container'>
+    <div class="container">
         <div>
-            <img class='img-logo' src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+            <img class="img-logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
         </div>
         <nav>
-            <ul class='d-flex justify-content-center gap-3 mb-0'>
+            <ul class="d-flex justify-content-center gap-3 mb-0">
                 @foreach ($nav as $item)
                     <li>
                         <a href="{{ $item['link']}}">{{ $item['name'] }}</a>

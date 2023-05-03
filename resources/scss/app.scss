@@ -5,7 +5,13 @@
 @import "./_partials/header.scss";
 @import "./_partials/footer.scss";
 @import"./_partials/main-comics.scss";
-
+@import "./_partials/det_comic.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 ul{
     margin-bottom: 0;
 }

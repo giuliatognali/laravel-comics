@@ -27,3 +27,20 @@ Route::get('/', function () {
     return view('comics', $data);
 
 })-> name('comics');
+
+
+Route::get('/dettagli', function () {
+    $data = [
+        'nav' => config('nav'),
+        'comics' => config('comics'),
+        'socials' => config('socials'),
+        'dc_comics' => config('dc_comics'),
+        'dc_shops' => config('dc_shops'),
+        'dc_list'=> config('dc_list'),
+        'dc_sites'=> config('dc_sites'),
+        'dc_links'=> config('dc_links')
+    ];
+
+    return view('detail_comics', $data);
+
+})-> name('detail_comics');
