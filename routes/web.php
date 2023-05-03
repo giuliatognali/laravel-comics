@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'nav' => config('nav'),
-        'comics' => config('comics')
+        'comics' => config('comics'),
+        'socials' => config('socials')
     ];
     return view('home', $data);
 
