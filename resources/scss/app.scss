@@ -1,12 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
+
 @import "./_partials/variables.scss";
 
 @import "./_partials/header.scss";
 @import "./_partials/footer.scss";
+@import"./_partials/main-comics.scss";
 
 ul{
     margin-bottom: 0;
 }
+
 li{
     list-style: none;
 }

@@ -24,6 +24,6 @@ Route::get('/', function () {
         'dc_sites'=> config('dc_sites'),
         'dc_links'=> config('dc_links')
     ];
-    return view('home', $data);
+    return view('comics', $data);
 
-})-> name('home');
+})-> name('comics');
