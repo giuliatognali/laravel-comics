@@ -1,49 +1,97 @@
 footer {
+    .main-footer {
+        min-height: 370px;
+        background-image: url(/resources/img/footer-bg.jpg);
+        overflow: hidden;
+        padding: 35px 0;
+
+        .container {
+            display: flex;
+            position: relative;
+
+
+            p{
+                color:$secondary-text-color;
+                font-size: 12px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                padding-right: 20px;
+
+                h3 {
+                    color: white;
+                    font-size: 20px;
+                    font-stretch: condensed;
+                    padding-bottom: 25px;
+                    padding-right: 15px;
+                    margin:0
+                }
+
+                ul {
+                    padding: 0;
+
+                    a{
+                        color:$secondary-text-color;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .logo {
+                position: absolute;
+                right: 100px;
+                top: -100px
+            }
+        }
+    }
+
+
     .bottom-footer {
         background-color: $secondary-color;
 
-
-    }
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        button {
-            background-color: $secondary-color;
-            border: 2px solid $primary-color;
-            padding: .9375rem;
-
-            &:hover {
-                background-color: $primary-color;
-            }
-
-            a {
-                color: white;
-            }  
-        }
-        .contacts {
+        .container {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            h3 {
-                color: $primary-color;
+            justify-content: space-between;
+
+            button {
+                background-color: $secondary-color;
+                border: 2px solid $primary-color;
+                padding: .9375rem;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+
+                a {
+                    color: white;
+                }
             }
 
-            ul {
+            .contacts {
                 display: flex;
-                justify-content: flex-end;
                 align-items: center;
+                justify-content: flex-end;
 
-                img {
-                    height: 2.1875rem;
-                    margin: .3125rem;
+                h3 {
+                    color: $primary-color;
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    img {
+                        height: 2.1875rem;
+                        margin: .3125rem;
+                    }
                 }
             }
         }
-
-
-
     }
-
 }

@@ -18,10 +18,10 @@ Route::get('/', function () {
         'nav' => config('nav'),
         'comics' => config('comics'),
         'socials' => config('socials'),
-        'dc-comics' => config('dc-comics'),
-        'dc-shops' => config('dc-shops'),
-        'dc-list'=> config('dc-list'),
-        'dc-sites'=> config('dc-sites'),
+        'dc_comics' => config('dc_comics'),
+        'dc_shops' => config('dc_shops'),
+        'dc_list'=> config('dc_list'),
+        'dc_sites'=> config('dc_sites'),
     ];
     return view('home', $data);
 
