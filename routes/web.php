@@ -17,7 +17,11 @@ Route::get('/', function () {
     $data = [
         'nav' => config('nav'),
         'comics' => config('comics'),
-        'socials' => config('socials')
+        'socials' => config('socials'),
+        'dc-comics' => config('dc-comics'),
+        'dc-shops' => config('dc-shops'),
+        'dc-list'=> config('dc-list'),
+        'dc-sites'=> config('dc-sites'),
     ];
     return view('home', $data);
 
