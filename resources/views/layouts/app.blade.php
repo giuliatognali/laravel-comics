@@ -9,12 +9,15 @@
     <title>@yield('page.title')</title>
     @vite('resources/js/app.js')
 </head>
-@include('partials.header')
 
 <body>
-    @yield('page.main')
-</body>
+    @include('partials.header')
 
-@include('partials.footer')
+    <main>
+        @yield('page.main')
+
+    </main>
+    @include('partials.footer')
+</body>
 
 </html>

@@ -8,7 +8,7 @@ footer {
                 justify-content: space-around;
                 align-items: center;
                 min-height: 155px;
-                margin-bottom: 0;
+                
 
                 li {
                     padding: 15px;
@@ -60,6 +60,7 @@ footer {
             p {
                 color: $secondary-text-color;
                 font-size: 12px;
+                padding-top: 15px;
             }
 
             div {
@@ -124,8 +125,10 @@ footer {
                 align-items: center;
                 justify-content: flex-end;
 
-                h3 {
+                h4 {
                     color: $primary-color;
+                    margin-bottom: 0;
+
                 }
 
                 ul {

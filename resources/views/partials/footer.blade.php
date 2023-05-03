@@ -67,7 +67,6 @@
             <div class="logo">
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="logo-dc">
             </div>
-
         </div>
         <div class="container">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, assumenda blanditiis nihil deserunt
@@ -86,7 +85,7 @@
                 </button>
             </div>
             <div class="contacts">
-                <h3>FOLLOW US</h3>
+                <h4>FOLLOW US</h4>
                 <ul>
                     @foreach ($socials as $contact)
                         <li></li>
