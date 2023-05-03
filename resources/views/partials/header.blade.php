@@ -24,7 +24,7 @@
             <ul class='d-flex justify-content-center gap-3 mb-0'>
                 @foreach ($nav as $item)
                     <li>
-                        <a href="">{{ $item['name'] }}</a>
+                        <a href="{{ $item['link']}}">{{ $item['name'] }}</a>
                     </li>
                 @endforeach
             </ul>
