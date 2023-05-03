@@ -22,6 +22,7 @@ Route::get('/', function () {
         'dc_shops' => config('dc_shops'),
         'dc_list'=> config('dc_list'),
         'dc_sites'=> config('dc_sites'),
+        'dc_links'=> config('dc_links')
     ];
     return view('home', $data);
 

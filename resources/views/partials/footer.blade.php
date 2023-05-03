@@ -1,6 +1,19 @@
 <footer>
-    <div class="container-top">
-
+    <div class="container-footer-top">
+        <div class="top-footer">
+            <ul class="container">
+                @foreach ($dc_links as $link)
+                    <li>
+                        <a href="{{ $link['link'] }}">
+                            <div class="img-container">
+                                <img src="{{ Vite::asset($link['img']) }}" alt="">
+                            </div>
+                            <h4>{{ $link['text'] }}</h4>
+                        </a>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
     </div>
     {{-- footer main --}}
     <div class="main-footer">
@@ -9,7 +22,6 @@
                 <h3>DC COMICS</h3>
                 <ul>
                     @foreach ($dc_comics as $comic)
-                        <li></li>
                         <li>
                             <a href="{{ $comic['link'] }}" target="{{ $comic['target'] }}">
                                 {{ $comic['text'] }}
@@ -20,7 +32,6 @@
                 <h3>SHOP</h3>
                 <ul>
                     @foreach ($dc_shops as $shop)
-                        <li></li>
                         <li>
                             <a href="{{ $shop['link'] }}" target="{{ $shop['target'] }}">
                                 {{ $shop['text'] }}
@@ -33,7 +44,6 @@
                 <h3>DC</h3>
                 <ul>
                     @foreach ($dc_list as $item)
-                        <li></li>
                         <li>
                             <a href="{{ $item['link'] }}" target="{{ $item['target'] }}">
                                 {{ $item['text'] }}
@@ -46,7 +56,6 @@
                 <h3>SITES</h3>
                 <ul>
                     @foreach ($dc_sites as $site)
-                        <li></li>
                         <li>
                             <a href="{{ $site['link'] }}" target="{{ $site['target'] }}">
                                 {{ $site['text'] }}
@@ -61,7 +70,9 @@
 
         </div>
         <div class="container">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, assumenda blanditiis nihil deserunt rerum cumque optio illo doloribus reiciendis suscipit aspernatur, quidem laborum? Totam id error odit ipsa dignissimos consequuntur!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, assumenda blanditiis nihil deserunt
+                rerum cumque optio illo doloribus reiciendis suscipit aspernatur, quidem laborum? Totam id error odit
+                ipsa dignissimos consequuntur!</p>
 
         </div>
     </div>
@@ -89,5 +100,4 @@
             </div>
         </div>
     </div>
-    {{-- /footer bottom --}}
 </footer>

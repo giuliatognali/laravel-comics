@@ -1,4 +1,51 @@
 footer {
+    .container-footer-top {
+        .top-footer {
+            background-color: $primary-color;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-height: 155px;
+                margin-bottom: 0;
+
+                li {
+                    padding: 15px;
+
+                    &:hover {
+                        border: 1px solid white;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    h4{
+                        font-size: 18px;
+                        color:white;
+                        margin: 0;
+                    }
+                    .img-container {
+                        height: 70px;
+                        width: 70px;
+                        padding-right: 18px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
     .main-footer {
         min-height: 370px;
         background-image: url(/resources/img/footer-bg.jpg);
@@ -10,8 +57,8 @@ footer {
             position: relative;
 
 
-            p{
-                color:$secondary-text-color;
+            p {
+                color: $secondary-text-color;
                 font-size: 12px;
             }
 
@@ -28,14 +75,14 @@ footer {
                     font-stretch: condensed;
                     padding-bottom: 25px;
                     padding-right: 15px;
-                    margin:0
+                    margin: 0
                 }
 
                 ul {
                     padding: 0;
 
-                    a{
-                        color:$secondary-text-color;
+                    a {
+                        color: $secondary-text-color;
                         font-size: 12px;
                     }
                 }
