@@ -31,7 +31,14 @@ Route::get('/', function () {
 
 Route::get('/dettagli/{index}', function ($index) {
 
-    $comics = config('comics')[$index];
+    $all_comics = config('comics');
+
+    if($index > count($all_comics) - 1){
+        abort(404);
+    };
+    
+    $comics = $all_comics[$index];
+
     $data = [
         'comics' => $comics,
         'nav' => config('nav'),
@@ -45,4 +52,4 @@ Route::get('/dettagli/{index}', function ($index) {
 
     return view('detail_comics', $data);
 
-})-> name('detail_comics');
+})->where('index', '[0-9]+')-> name('detail_comics');

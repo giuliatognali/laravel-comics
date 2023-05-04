@@ -18,17 +18,10 @@
             <div class="card-info col-8">
                 <h3>{{$comics['title']}}</h3>
                 <div class="buy">
-                    <h6>Price</h6>
+                    <h6>Price {{$comics['price']}}</h6>
                 </div>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga odio obcaecati maxime dolorem
-                    sint,
-                    cum, aperiam ipsam soluta nihil perspiciatis expedita ex eligendi rem sapiente, laborum tempore non
-                    sunt.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga odio obcaecati maxime dolorem
-                    sint,
-                    cum, aperiam ipsam soluta nihil perspiciatis expedita ex eligendi rem sapiente, laborum tempore non
-                    sunt.
+                <p> {{$comics['description']}}
                 </p>
 
             </div>
