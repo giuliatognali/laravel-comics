@@ -10,7 +10,7 @@ DC Comics
         <div class="label">
             <h4>CURRENT SERIES</h4>
         </div>
-        <div class="container-small">
+        <div class="ms-container-small">
             @include('partials.comiccard')
         </div>
         <div class="container">

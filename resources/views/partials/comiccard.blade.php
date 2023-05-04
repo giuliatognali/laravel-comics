@@ -1,5 +1,4 @@
 <div class="card-comic">
-
     @foreach ($comics as $comic)
         <div class="my-card">
             <div class="img">
