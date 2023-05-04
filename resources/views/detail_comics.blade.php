@@ -14,7 +14,7 @@
             </div>
 
         </div>
-        <div class="container-small row">
+        <div class="container-small row pt-5">
             <div class="card-info col-8">
                 <h3>{{ $comics['title'] }}</h3>
                 <div class="buy">
@@ -28,7 +28,7 @@
             <div class="advs col-4">
                 <h6>ADVERTISEMENT</h6>
                 <a href="">
-                    <img class="img" src="{{ Vite::asset('/resources/img/advisor.jpeg') }}" alt="">
+                    <img class="img" src="{{ Vite::asset('/resources/img/pubblicit.jpg') }}" alt="">
                 </a>
             </div>
         </div>
