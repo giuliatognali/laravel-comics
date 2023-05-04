@@ -29,10 +29,12 @@ Route::get('/', function () {
 })-> name('comics');
 
 
-Route::get('/dettagli', function () {
+Route::get('/dettagli/{index}', function ($index) {
+
+    $comics = config('comics')[$index];
     $data = [
+        'comics' => $comics,
         'nav' => config('nav'),
-        'comics' => config('comics'),
         'socials' => config('socials'),
         'dc_comics' => config('dc_comics'),
         'dc_shops' => config('dc_shops'),

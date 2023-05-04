@@ -16,7 +16,7 @@
         </div>
         <div class="container-small row">
             <div class="card-info col-8">
-                <h3>TITOLO FUMETTO</h3>
+                <h3>{{$comics['title']}}</h3>
                 <div class="buy">
                     <h6>Price</h6>
                 </div>
@@ -32,16 +32,21 @@
                 </p>
 
             </div>
-            <div class="adv col-4">
+            <div class="advs col-4">
                 <h6>ADVERTISEMENT</h6>
                 <a href="">
-                    <img class="img" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
+                    <img class="img" src="{{Vite::asset('/resources/img/advisor.jpeg') }}" alt="">
                 </a>
             </div>
         </div>
-        <div class="container-small info">
-            <div class="container-info">
-                Altre info
+        <div class="ms-container info">
+            <div class="container-small row">
+                <div class="col-6">
+                    <h5>Talent</h5>
+                </div>
+                <div class="col-6">
+                    <h5>Specs</h5>
+                </div>
 
             </div>
         </div>
